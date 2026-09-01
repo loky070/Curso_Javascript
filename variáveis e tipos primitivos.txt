@@ -1,0 +1,23 @@
+var nome = "Gustavo"
+
+let funciona praticamente igual, mas o GPT recomendou eu usar mais o let pq é a forma moderna de declarar uma variável, e ela só pode ser acessada dentro do escopo/bloco { } onde foi declarada.
+
+
+n tem mt segredo
+
+nos tipos primitivos tem:
+ 
+-string
+-number (que abranje em comparação com outras linguagens int e float)
+    -Infinity
+    -NaN
+-boolean
+-null (null é considerado um "object")
+-undefined
+-object
+    -array
+-function
+
+
+
+comando "typeof" diz o tipo

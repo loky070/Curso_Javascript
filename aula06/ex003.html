@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Programa em JavaScript</title>
+    <style>
+        body{
+            /*Comentário em CSS*/
+            background-color: rgb(106, 134, 226);
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1{
+            color: aqua;
+        }
+    </style>
+
+</head>
+<body>
+    <!--Comentário em HTML-->
+    <h1>Olá, Mundo!</h1>
+    <p>Me livrei da maldição</p>
+    
+    <script>
+        //window.prompt retorna uma string
+        //Number.parseInt(n) converte uma string para Inteiro
+        //Number.parseFloat(n) converte uma string para Float
+        // hoje em dia só se usa Number(n) e deixa o JS se virar
+
+        var n1 = Number(window.prompt('Digite um número: ')) 
+        var n2 = Number(window.prompt('Digite outro número: '))
+        var soma = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`)
+
+        // window.alert(`A soma entre ${n1} e ${n2} é igual a ` + String(soma))
+        // (number + number) para adição
+        // (string + string) para concatenação
+    </script>
+
+</body>
+</html>  

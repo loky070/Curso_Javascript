@@ -1,0 +1,54 @@
++ no JS serve também pra concatenação
+        // (number + number) para adição
+        // (string + string) para concatenação
+
+        var nome = window.prompt("Qual é seu nome?")
+        window.alert('É um grande prazer em te conhecer, ' + nome)
+
+o problema é que fica assim:
+
+>>'O aluno ' + nome + ' de ' + idade + ' tirou ' + nota
+
+pra não ficar assim, usamos:
+
+Template String
+
+>>`O aluno ${nome} com ${idade} anos tirou ${nota}`
+
+ENTRE CRASES!!!
+
+================================
+DE STRING PARA NÚMERO
+
+window.prompt retorna uma string
+
+Number.parseInt(n) converte uma string para Inteiro
+
+Number.parseFloat(n) converte uma string para Float
+
+hoje em dia só se usa Number(n) e deixa o JS se virar
+
+================================
+DE NÚMERO PARA STRING
+
+String(n)
+
+n.toString()
+
+================================
+s.length // quantos caracteres a string tem
+s.toUpperCase() // tudo para 'MAIÚSCULAS'
+s.toLowerCase() // tudo para 'minúsculas'
+
+pra formatar número:
+
+>>var n1 = 1545.5
+
+>>n1.toFixed(2)
+>>'1545.50'
+
+Substitui o 1° pelo 2°:
+>>n1.toFixed(2).replace('.', ',')  
+
+Deixa valor monetário no padrão do Brasil:
+>>n1.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})
