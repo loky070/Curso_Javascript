@@ -1,3 +1,11 @@
 criei esse aqui pq o JavaScript tem umas coisas diferentes doq to acostumado e preciso anotar
 
 nele tu pode criar uma variável do tipo "number" por exemplo e trocar o valor para uma "string".
+
+5 == 5 -> true
+5 == '5' -> true também
+pq o sinal de igualdade não testa se o tipo é igual
+
+
+se quiser testar pra saber se é O mesmo valor e O mesmo tipo, usamos ===
+5 === '5' -> false

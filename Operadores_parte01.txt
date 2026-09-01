@@ -1,0 +1,30 @@
+ordem: aritméticos -> relacionais -> lógicos
+
+
+Aritméticos:
+5 + 2 = 7
+5 - 2 = 3
+5 * 2 = 10
+5 / 2 = 2.5
+5 % 2 = 1 (resto da divisão inteira)
+5 ** 2 = 25 (potencia, 5 ao quadrado [5²])
+
+atribuição:
+
+simples:
+var a = 5 + 3
+
+auto-atribuição:
+
+var n = 3
+n = n + 4 (n = 7)
+
+n +=4
+
+incremento:
+
+var x = 5
+
+x = x + 1
+x++ (serve pra add +1)
+pode ser ++x também
