@@ -1,0 +1,24 @@
+DOM = Document Object Model
+facilitador do navegador pra dar acesso as tags HTML ao JavaScript
+
+DOM (Document Object Model) = uma representação da página HTML em forma de objetos, que permite ao JavaScript acessar e modificar os elementos HTML.
+
+
+
+esses get servem para tu conectar o html com o javascript e poder fazer alterações
+
+pelo nome da tag: 
+
+    getElementsByTagName()[0] quando tiver mais, tipo se tiver vários <p>
+por ID:
+    getElementById()
+
+por nome do objeto:
+    getElementsByName()
+
+por classe:
+    getElementsByClassName()
+
+por seletor:
+    querySelector()
+    querySelectorAll()
