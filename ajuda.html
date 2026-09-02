@@ -1,0 +1,991 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <!--
+        <head> contém configurações e informações da página.
+        Normalmente, o conteúdo daqui não aparece diretamente na tela.
+    -->
+
+    <!-- Define que o documento usa caracteres UTF-8.
+         Isso permite usar ç, á, ã, etc. -->
+    <meta charset="UTF-8">
+
+    <!-- Faz a página se adaptar a celulares e outras telas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--
+        <title> define o título que aparece na aba do navegador.
+    -->
+    <title>Guia de HTML e CSS</title>
+
+
+    <!-- =========================================================
+         CSS
+         =========================================================
+
+         CSS é usado para definir a aparência do HTML.
+
+         HTML = estrutura
+         CSS  = aparência
+         JS   = comportamento
+    -->
+
+    <style>
+
+        /*
+            body representa o corpo inteiro da página.
+
+            background-color = cor de fundo
+            color            = cor do texto
+            font-family      = tipo da fonte
+            margin           = espaço externo
+        */
+        body {
+            background-color: #f2f2f2;
+            color: #222;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+
+        /*
+            .container
+
+            O ponto (.) significa que estamos selecionando
+            uma CLASS chamada "container".
+        */
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+
+        /*
+            Selecionando diretamente uma TAG:
+
+            h1 significa todos os <h1> da página.
+        */
+        h1 {
+            text-align: center;
+        }
+
+
+        /*
+            Podemos selecionar uma classe específica:
+
+            .caixa seleciona qualquer elemento que tenha:
+            
+            class="caixa"
+        */
+        .caixa {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+
+        /*
+            <code> é usado para representar código.
+
+            Aqui estamos deixando o código visualmente
+            diferente do texto normal.
+        */
+        code {
+            background-color: #eee;
+            padding: 3px 6px;
+            border-radius: 4px;
+        }
+
+
+        /*
+            <pre> é muito usado para mostrar blocos de código.
+
+            "white-space: pre-wrap" permite que linhas grandes
+            quebrem quando necessário.
+        */
+        pre {
+            background-color: #222;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+
+        /*
+            Selecionando uma classe pelo nome:
+
+            .destaque
+        */
+        .destaque {
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <!--
+        =========================================================
+        BODY
+        =========================================================
+
+        Tudo que aparece visualmente na página normalmente
+        fica dentro do <body>.
+    -->
+
+
+    <div class="container">
+
+        <!--
+            =====================================================
+            TÍTULOS
+            =====================================================
+
+            HTML possui títulos de <h1> até <h6>.
+
+            <h1> = título mais importante
+            <h2> = subtítulo
+            <h3> = subtítulo do subtítulo
+            ...
+            <h6> = menor nível de título
+        -->
+
+        <h1>Guia rápido de HTML e CSS</h1>
+
+
+        <div class="caixa">
+
+            <h2>1. O que é HTML?</h2>
+
+            <!--
+                <p> significa PARAGRAPH (parágrafo).
+
+                É usado para textos normais.
+            -->
+
+            <p>
+                HTML é responsável pela estrutura da página.
+            </p>
+
+            <p>
+                Pense assim:
+            </p>
+
+            <ul>
+
+                <!--
+                    <ul> = Unordered List
+                    Lista não ordenada.
+                -->
+
+                <li>HTML = estrutura</li>
+
+                <!--
+                    <li> = List Item
+                    Representa um item da lista.
+                -->
+
+                <li>CSS = aparência</li>
+
+                <li>JavaScript = comportamento</li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- =====================================================
+             2. DIV
+             ===================================================== -->
+
+        <div class="caixa">
+
+            <h2>2. A tag &lt;div&gt;</h2>
+
+            <!--
+                <div> é uma das tags mais utilizadas.
+
+                Ela funciona como um "container".
+
+                É muito usada para agrupar elementos.
+
+                Exemplo:
+
+                <div>
+                    <h1>Título</h1>
+                    <p>Texto</p>
+                </div>
+            -->
+
+            <p>
+                A <code>&lt;div&gt;</code> serve principalmente
+                para agrupar elementos.
+            </p>
+
+            <div>
+
+                <h3>Exemplo de uma div</h3>
+
+                <p>
+                    Esse texto está dentro de uma div.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             3. SPAN
+             ===================================================== -->
+
+        <div class="caixa">
+
+            <h2>3. A tag &lt;span&gt;</h2>
+
+            <!--
+                <span> é parecido com <div>, mas normalmente
+                é usado para pequenos pedaços de texto.
+
+                Exemplo:
+            -->
+
+            <p>
+                Esse texto possui uma
+                <span class="destaque">parte destacada</span>.
+            </p>
+
+            <!--
+                Diferença simplificada:
+
+                <div>  = agrupar blocos de conteúdo
+                <span> = agrupar pequenos trechos de conteúdo
+            -->
+
+        </div>
+
+
+        <!-- =====================================================
+             4. LISTAS
+             ===================================================== -->
+
+        <div class="caixa">
+
+            <h2>4. Listas</h2>
+
+            <h3>Lista não ordenada: &lt;ul&gt;</h3>
+
+            <!--
+                <ul> cria uma lista com marcadores.
+            -->
+
+            <ul>
+
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+
+            </ul>
+
+
+            <h3>Lista ordenada: &lt;ol&gt;</h3>
+
+            <!--
+                <ol> = Ordered List
+
+                Cria uma lista numerada.
+            -->
+
+            <ol>
+
+                <li>Aprender HTML</li>
+                <li>Aprender CSS</li>
+                <li>Aprender JavaScript</li>
+
+            </ol>
+
+        </div>
+
+
+        <!-- =====================================================
+             5. LINKS
+             ===================================================== -->
+
+        <div class="caixa">
+
+            <h2>5. Links — &lt;a&gt;</h2>
+
+            <!--
+                <a> cria links.
+
+                href = endereço para onde o link aponta.
+            -->
+
+            <a href="https://google.com">
+                Ir para o Google
+            </a>
+
+
+            <!--
+                target="_blank"
+
+                Faz o link abrir em uma nova aba.
+            -->
+
+            <br><br>
+
+            <a href="https://google.com" target="_blank">
+                Google em outra aba
+            </a>
+
+        </div>
+
+
+        <!-- =====================================================
+             6. IMAGENS
+             ===================================================== -->
+
+        <div class="caixa">
+
+            <h2>6. Imagens — &lt;img&gt;</h2>
+
+            <!--
+                <img> coloca uma imagem na página.
+
+                src = caminho/endereço da imagem
+                alt = descrição da imagem
+
+                Exemplo:
+
+                <img src="foto.jpg" alt="Minha foto">
+
+                Diferentemente de <div> e <p>,
+                <img> não precisa de uma tag de fechamento.
+            -->
+
+            <p>
+                Exemplo:
+            </p>
+
+            <code>
+                &lt;img src="foto.jpg" alt="Descrição da foto"&gt;
+            </code>
+
+        </div>
+
+
+        <!-- =====================================================
+             7. BOTÕES
+             ===================================================== -->
+
+        <div class="caixa">
+
+            <h2>7. Botões — &lt;button&gt;</h2>
+
+            <!--
+                <button> cria um botão.
+
+                É muito importante para JavaScript,
+                pois podemos detectar quando o usuário
+                clica nele.
+            -->
+
+            <button>
+                Clique aqui
+            </button>
+
+
+            <!--
+
+                Com JavaScript, podemos fazer:
+
+                <button onclick="mostrarMensagem()">
+                    Clique aqui
+                </button>
+
+                E então executar uma função quando
+                o botão for clicado.
+            -->
+
+        </div>
+
+
+        <!-- =====================================================
+             8. INPUT
+             ===================================================== -->
+
+        <div class="caixa">
+
+            <h2>8. Campos de entrada — &lt;input&gt;</h2>
+
+            <!--
+                <input> permite que o usuário digite
+                ou selecione alguma informação.
+            -->
+
+            <input type="text" placeholder="Digite seu nome">
+
+
+            <!--
+                type define o tipo do input.
+
+                Alguns exemplos:
+            -->
+
+            <p>
+                Texto:
+            </p>
+
+            <input type="text">
+
+
+            <p>
+                Número:
+            </p>
+
+            <input type="number">
+
+
+            <p>
+                Senha:
+            </p>
+
+            <input type="password">
+
+
+            <p>
+                Checkbox:
+            </p>
+
+            <input type="checkbox">
+
+        </div>
+
+
+        <!-- =====================================================
+             9. FORM
+             ===================================================== -->
+
+        <div class="caixa">
+
+            <h2>9. Formulários — &lt;form&gt;</h2>
+
+            <!--
+                <form> agrupa campos que fazem parte
+                de um formulário.
+            -->
+
+            <form>
+
+                <label>
+                    Nome:
+                </label>
+
+                <input type="text">
+
+
+                <br><br>
+
+
+                <label>
+                    Email:
+                </label>
+
+                <input type="email">
+
+
+                <br><br>
+
+
+                <button type="submit">
+                    Enviar
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- =====================================================
+             10. LABEL
+             ===================================================== -->
+
+        <div class="caixa">
+
+            <h2>10. &lt;label&gt;</h2>
+
+            <!--
+                <label> serve para identificar um campo.
+
+                É muito utilizado junto com <input>.
+            -->
+
+            <label for="nome">
+                Nome:
+            </label>
+
+            <input id="nome" type="text">
+
+
+            <!--
+                O "for" do label deve corresponder ao "id"
+                do input.
+
+                label:
+                    for="nome"
+
+                input:
+                    id="nome"
+            -->
+
+        </div>
+
+
+        <!-- =====================================================
+             11. TABELAS
+             ===================================================== -->
+
+        <div class="caixa">
+
+            <h2>11. Tabelas</h2>
+
+            <!--
+                <table> = tabela
+                <tr>    = Table Row (linha)
+                <th>    = Table Header (cabeçalho)
+                <td>    = Table Data (célula)
+            -->
+
+            <table border="1">
+
+                <tr>
+
+                    <th>Nome</th>
+                    <th>Idade</th>
+
+                </tr>
+
+                <tr>
+
+                    <td>João</td>
+                    <td>20</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Maria</td>
+                    <td>25</td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+
+        <!-- =====================================================
+             12. TAGS SEMÂNTICAS
+             ===================================================== -->
+
+        <div class="caixa">
+
+            <h2>12. Tags semânticas</h2>
+
+            <!--
+                HTML possui tags que ajudam a representar
+                o significado de cada parte da página.
+
+                <header> = cabeçalho
+                <nav>    = navegação
+                <main>   = conteúdo principal
+                <section> = seção
+                <article> = conteúdo independente
+                <footer> = rodapé
+            -->
+
+
+            <header>
+                Cabeçalho do site
+            </header>
+
+
+            <nav>
+                Menu / Navegação
+            </nav>
+
+
+            <main>
+
+                <section>
+
+                    <h3>Seção principal</h3>
+
+                    <p>
+                        Conteúdo da seção.
+                    </p>
+
+                </section>
+
+            </main>
+
+
+            <footer>
+                Rodapé do site
+            </footer>
+
+        </div>
+
+
+        <!-- =====================================================
+             13. ATRIBUTOS
+             ===================================================== -->
+
+        <div class="caixa">
+
+            <h2>13. Atributos HTML</h2>
+
+            <!--
+                Atributos fornecem informações extras
+                para uma tag.
+
+                Exemplos:
+            -->
+
+
+            <!-- class -->
+
+            <p class="destaque">
+                Esse elemento possui uma classe.
+            </p>
+
+
+            <!-- id -->
+
+            <p id="paragrafo">
+                Esse elemento possui um ID.
+            </p>
+
+
+            <!--
+                class e id são MUITO importantes para JavaScript.
+
+                Podemos encontrar elementos usando:
+
+                document.getElementById("paragrafo")
+
+                ou:
+
+                document.querySelector(".destaque")
+            -->
+
+        </div>
+
+
+        <!-- =====================================================
+             14. ID x CLASS
+             ===================================================== -->
+
+        <div class="caixa">
+
+            <h2>14. ID x CLASS</h2>
+
+            <!--
+                ID
+
+                Normalmente identifica um elemento específico.
+
+                Exemplo:
+            -->
+
+            <p id="titulo">
+                Elemento com ID
+            </p>
+
+
+            <!--
+                CLASS
+
+                Pode ser utilizada em vários elementos.
+
+                Exemplo:
+            -->
+
+            <p class="texto">
+                Primeiro texto
+            </p>
+
+            <p class="texto">
+                Segundo texto
+            </p>
+
+
+            <!--
+
+                No CSS:
+
+                #titulo {
+                    ...
+                }
+
+                O # seleciona ID.
+
+
+                .texto {
+                    ...
+                }
+
+                O . seleciona CLASS.
+
+
+                No JavaScript:
+
+                document.getElementById("titulo");
+
+                document.querySelector(".texto");
+
+            -->
+
+        </div>
+
+
+        <!-- =====================================================
+             15. CSS
+             ===================================================== -->
+
+        <div class="caixa">
+
+            <h2>15. Principais propriedades CSS</h2>
+
+
+            <!--
+                color
+                Define a cor do texto.
+            -->
+
+            <p style="color: red;">
+                Texto vermelho
+            </p>
+
+
+            <!--
+                background-color
+                Define a cor do fundo.
+            -->
+
+            <p style="background-color: yellow;">
+                Fundo amarelo
+            </p>
+
+
+            <!--
+                font-size
+                Define o tamanho da fonte.
+            -->
+
+            <p style="font-size: 25px;">
+                Texto maior
+            </p>
+
+
+            <!--
+                font-family
+                Define a fonte.
+            -->
+
+            <p style="font-family: Arial;">
+                Texto em Arial
+            </p>
+
+
+            <!--
+                font-weight
+                Define o peso da fonte.
+
+                normal
+                bold
+            -->
+
+            <p style="font-weight: bold;">
+                Texto em negrito
+            </p>
+
+
+            <!--
+                text-align
+                Alinha o texto.
+            -->
+
+            <p style="text-align: center;">
+                Texto centralizado
+            </p>
+
+        </div>
+
+
+        <!-- =====================================================
+             16. MARGIN E PADDING
+             ===================================================== -->
+
+        <div class="caixa">
+
+            <h2>16. Margin e Padding</h2>
+
+            <!--
+
+                MARGIN = espaço FORA do elemento.
+
+                PADDING = espaço DENTRO do elemento.
+
+                     MARGIN
+                        ↓
+                ┌───────────────┐
+                │   PADDING     │
+                │  ┌─────────┐  │
+                │  │ CONTEÚDO│  │
+                │  └─────────┘  │
+                └───────────────┘
+
+            -->
+
+            <p>
+                margin = espaço externo
+            </p>
+
+            <p>
+                padding = espaço interno
+            </p>
+
+        </div>
+
+
+        <!-- =====================================================
+             17. FLEXBOX
+             ===================================================== -->
+
+        <div class="caixa">
+
+            <h2>17. Flexbox</h2>
+
+            <!--
+                Flexbox é muito usado para organizar
+                elementos na página.
+
+                Exemplo:
+
+                .container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+
+                display: flex
+                → ativa o Flexbox.
+
+
+                justify-content
+                → controla o alinhamento no eixo principal.
+
+
+                align-items
+                → controla o alinhamento no eixo secundário.
+
+
+                Para centralizar algo na tela:
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+
+            -->
+
+        </div>
+
+
+        <!-- =====================================================
+             18. HTML + JAVASCRIPT
+             ===================================================== -->
+
+        <div class="caixa">
+
+            <h2>18. Onde JavaScript entra?</h2>
+
+            <!--
+                Aqui começa a parte que você está estudando agora.
+
+                JavaScript pode acessar e modificar
+                os elementos HTML.
+
+                Por exemplo:
+            -->
+
+            <p id="mensagem">
+                Texto original
+            </p>
+
+            <button onclick="mudarTexto()">
+                Mudar texto
+            </button>
+
+
+            <!--
+                O botão chama a função:
+
+                    mudarTexto()
+
+                Essa função está escrita no JavaScript
+                abaixo.
+            -->
+
+        </div>
+
+
+    </div>
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+         =========================================================
+
+         O JavaScript pode acessar os elementos HTML
+         através do DOM.
+
+         DOM = Document Object Model
+
+         Basicamente, o navegador transforma o HTML
+         em uma estrutura que o JavaScript consegue manipular.
+    -->
+
+    <script>
+
+        // Encontrando um elemento pelo ID
+        const mensagem = document.getElementById("mensagem");
+
+
+        // Criando uma função
+        function mudarTexto() {
+
+            // Alterando o texto do elemento
+            mensagem.innerText = "O JavaScript mudou o texto!";
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
+```
