@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+
+        h1.titulo{
+            display: flex;
+            justify-content: center; /* Centraliza na horizontal */
+            align-items: center;     /*  Centraliza na vertical */
+            background-color: rgb(183, 241, 193);
+            padding: 10px 20px;
+            margin: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo">Verificador de Nacionalidade</h1>
+
+    <p>
+        Você vive em que país?  
+        <input type="text" name="nacio" id="nacio"> 
+        <input type="button" value="Verificar" onclick="nacionalidade()">
+    </p>
+    <div id="res"></div>
+    <script>
+        function nacionalidade(){
+            var nacio = document.getElementById('nacio').value
+            var res = document.querySelector('div#res')
+
+            res.innerHTML = `<p>Você vive no ${nacio}</p>`
+
+            if (nacio.toUpperCase() == 'BRASIL'){
+                res.innerHTML += `Você é <strong>brasileiro!</strong>`
+            } else {
+                res.innerHTML += `Você é <strong>gringooooo</strong>`
+            }        
+        }
+    </script>
+</body>
+</html>
