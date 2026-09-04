@@ -22,3 +22,15 @@ footer{
     text-align: center;
     font-style: italic;
 }
+
+div#res{
+    text-align: center;
+    font-size: 20pt;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    padding: 10px;
+}
+
+img{
+    margin-top: 15px;
+}
