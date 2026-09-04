@@ -1,0 +1,12 @@
+while normal que já conhecemos:
+
+    while (contador <= 6){
+    console.log(`Passo ${contador}`)
+    contador++
+}
+
+no javascript tem outro, que enquanto no while normal primeiro testa e depois executa, nesse ele executa primeiro e depois testa, o 'do while':
+
+    do{
+
+    }while(condição)
