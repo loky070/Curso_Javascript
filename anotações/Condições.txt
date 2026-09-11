@@ -1,0 +1,38 @@
+condição simples: 
+    if(condição){
+
+    }
+
+condições compostas:
+    if(condição){
+
+    }else{
+
+    }
+
+condições aninhadas: 
+
+    if(condição){
+
+    }else{
+
+        if(condição){
+
+        }
+    }
+
+Condições Múltiplas:
+
+switch(expressão){
+    case valor1:
+
+    break
+
+    case valor 2:
+
+    break
+    
+    default:
+
+    break
+}

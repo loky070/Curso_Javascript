@@ -1,0 +1,10 @@
+Estrutura de repetição com variável de controle:
+
+for (inicio; teste; incremento){
+
+}
+
+
+for (var c=1 ; c<=10 ; c++){
+    
+}
