@@ -1,0 +1,8 @@
+variável que armazena vários valores
+
+let vaga = [carro1,carro2]
+
+vaga é um array/vetor
+carro1 e carro2 são os valores
+elemento de um vetor é um par que agrupa o espaço da memória, o valor colocado dentro dele e o índice
+índices/chave começam por 0
