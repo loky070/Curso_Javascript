@@ -10,7 +10,7 @@ function contar() {
     resultado.innerHTML = '';
 
     //inicioInput.length === 0 || fimInput.length === 0 também funciona, mas é mais verboso
-    if (!inicioInput || !fimInput) {
+    if (!inicioInput || !fimInput || !passoInput) {
         resultado.innerHTML = 'Impossível contar!';
         alert('[ERRO] Faltam dados!');
 
