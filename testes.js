@@ -1,3 +1,3 @@
-var n1 = 6
-var n2 = '6'
-console.log(n1 == n2)
+var n1 = 100
+var n2 = 2
+console.log(n1 % n2)
